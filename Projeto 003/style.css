@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Work Sans", sans-serif;
+    text-align: center;
+    background-color: #fff7d3;
+}
+
+h1 {
+    background-color: #403E35;
+    color: #E6DEBE;
+    font-style: bold;
+
+    border: 5px solid #B3AD94;
+    padding: 10px;
+}
+
+div {
+    background-color: #403E35;
+    font-size: 58px;
+    color: #E6DEBE;
+    margin: 63px 122px;
+
+    outline: 5px solid #B3AD94;
+
+    border: 5px outset #B3AD94;
+}
+
+div > p {
+    display: none;
+    font-size: 29px;
+    color: #dde4ff;
+}
+
+a {
+    color: #dde4ff;
+}
+
+a:hover {
+    color: white;
+}
+
+div:hover > p {
+    display: block;
+}

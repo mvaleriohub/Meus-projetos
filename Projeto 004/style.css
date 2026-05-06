@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=Fredericka+the+Great&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kaushan+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-destaque: 'DM Serif Display', serif;
+    --fonte-padrao: 'DM Sans', sans-serif;
+
+    --laranja: #C85A2A;
+    --preto: #111110;
+    --branco: #FAFAF8;
+    --esmaecido: #00000050;
+    --esmaecido2: #00000010;
+    --baixo-destaque: #00000080;
+    --baixo-destaque-b: #FFFFFF80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--branco);
+    font-family: var(--fonte-padrao)
+}
+
+h1, h2, h3 {
+  font-family: var(--fonte-destaque)
+}
+
+.destaque {
+    color: var(--laranja);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 23px 65px;;
+    align-items: center;
+
+    border-bottom: 1px solid gray;
+}
+
+header > p {
+    font-family: var(--fonte-destaque);
+    font-size: 1.5em;
+}
+
+nav > a {
+    margin: 0px 7px;
+
+    color: var(--baixo-destaque);
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+nav > a:hover {
+    color: var(--preto);
+}
+
+header > a {
+    color: white;
+    background-color: var(--preto);
+    text-decoration: none;
+    font-size: .8em;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+
+header > a:hover {
+    background-color: var(--laranja);
+}
+
+#hero {
+    padding: 96px 70px;
+}
+
+#hero > h1 {
+    font-size: 4.5em;
+    width: 624px;
+    line-height: 72px;
+}
+
+#hero > p {
+
+    color: var(--laranja);
+    font-weight: lighter;
+    padding: 0px 0px 20px 0px;
+}
+
+#hero > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#hero > div > p {
+    width: 427px;
+    color: var(--esmaecido);
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
+#link1 {
+    margin-right: 35px;
+    color: var(--branco);
+
+    color: white;
+    background-color: var(--preto);
+    text-decoration: none;
+    font-size: .9em;
+    border-radius: 2px;
+    padding: 17px 30px;
+}
+
+#link2 {
+    color: black;
+    text-underline-offset: 8px;
+}
+
+#graficos {
+    display: flex;
+    border-top: 1px solid rgba(128, 128, 128, 0.253);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+}
+
+#graficos > div {
+    flex: 1;
+    border-right: 1px solid rgba(128, 128, 128, 0.253);
+    padding: 50px 25px;
+    padding-left: 70px;
+}
+
+
+#graficos > div:last-child {
+    border-right: none;
+    padding-right: 70px;
+}
+
+#graficos > div > h3 {
+    font-size: 3em;
+}
+
+#graficos > div > p {
+    color: var(--esmaecido);
+}
+
+#servicos {
+    margin-bottom: 80px;
+    margin-top: 100px;
+    padding: 0px 70px;
+}
+
+#servicos > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#servicos > div h3 {
+    font-size: 2em;
+}
+
+#servicos > div a {
+    color: rgba(0, 0, 0, 0.411);
+    text-underline-offset: 8px;
+    font-size: .9em;
+}
+
+#servicos > section {
+    padding-top: 130px;
+    display: flex;
+}
+
+.servico {
+    padding: 50px 50px 50px 30px;
+    background-color: var(--laranja);
+}
+
+.number {
+    font-size: .8em;
+    padding-bottom: 30px;
+    color: var(--esmaecido);
+}
+
+#servico2 {
+    color: var(--branco);
+}
+
+#servico2 *:not(h3) {
+    color: var(--baixo-destaque-b);
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+#servico1, #servico3 {
+    background-color: #F0EEE8;
+    font-size: .9em;
+}
+
+#servico2 {
+    background-color: var(--preto);
+}
+
+.servico > h3 {
+    padding-bottom: 30px;
+}
+
+.servico > p {
+    color: var(--esmaecido);
+}
+
+.servico > ul {
+    color: var(--esmaecido);
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.servico > ul > li {
+    margin-right: 10px;
+    padding: 6px;
+    font-size: .9em;
+    border: 1px solid #C8C6BC;
+    border-radius: 30px;
+}
+
+#projetos {
+    padding: 0px 70px;
+}
+
+#projetos > .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 100px;
+    margin-bottom: 56px;
+    border-top: 1px solid rgba(0, 0, 0, 0.418);
+}
+
+#projetos > .header > h2 {
+    font-size: 2em;
+}
+
+#projetos > .header > a {
+    color: rgba(0, 0, 0, 0.411);
+    text-underline-offset: 8px;
+    font-size: .9em;
+}
+
+.projeto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--esmaecido2);
+    padding: 30px 0px;
+}
+
+.projeto:last-child {
+    border-bottom: 1px solid var(--esmaecido2);
+}
+
+.projeto > div {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.projeto h3 {
+    font-weight: normal;
+}
+
+.number2 {
+    color: rgba(0, 0, 0, 0.178);
+    font-size: 0.8em;
+}
+
+.objetivo {
+    font-size: .8em;
+    color: rgba(0, 0, 0, 0.555);
+    display: inline-block;
+    border-radius: 999px;
+    background-color: #f0efed;
+    padding: 6px 14px;
+}
+
+.ano {
+    font-size: .8em;
+    color: rgba(0, 0, 0, 0.178);
+}
+
+footer {
+    background-color: #111110;
+    color: #FAFAF8;
+    padding-bottom: 25px;
+    margin-top: 70px;
+}
+
+footer > article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 120px 70px;
+}
+
+footer h2 {
+    font-size: 3em;
+    max-width: 400px;
+    line-height: 115%;
+}
+
+footer h2 > span {
+    color: var(--laranja);
+}
+
+footer > article > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer > article > div > p {
+    color: rgba(255, 255, 255, 0.452);
+    font-size: .9em;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+footer > article > div > a {
+    font-size: 0.9em;
+    background-color: var(--laranja);
+    text-decoration: none;
+    color: var(--branco);
+    padding: 15px 42px;
+}
+
+
+footer > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 70px;
+    border-top: 1px solid rgba(255, 255, 255, 0.062);
+}
+
+footer > div > p {
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.24);
+    font-size: .8em;
+}
