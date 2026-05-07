@@ -75,3 +75,17 @@ nav a {
     color: var(--cor-font-padrao-fc);
     text-transform: uppercase;
 }
+
+#hero {
+    margin-left: 70px;
+    background-color: #2C2B26;
+}
+
+#hero h1 {
+    color: var(--cor-font-padrao-fc);
+}
+
+#hero  p {
+    color: var(--cor-font-esmaecida-fc);
+    
+}
