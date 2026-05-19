@@ -304,6 +304,14 @@ header nav > a:hover {
     padding-bottom: 80px;
 }
 
+#portfolio .title > div > span {
+    display: block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #C9A96E;
+    font-size: .8em;
+}
+
 #portfolio .title > div h2 {
     max-width: 400px;
     font-size: 3em;
@@ -378,8 +386,8 @@ header nav > a:hover {
 
 #PArte {
     background-image: url('../imagens/movimento.jpg');
-    width: 500px;
-    height: 500px;
+    width: 515px;
+    height: 720px;
 }
 
 #GP1 {
@@ -391,4 +399,22 @@ header nav > a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+/* Serviços */
+
+#servicos {
+    background-color: #0E0D0C;
+    padding: 100px 70px;
+}
+
+#servicos > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos > article {
+    display: flex;
+    
 }
