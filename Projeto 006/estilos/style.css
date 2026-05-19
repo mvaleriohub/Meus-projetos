@@ -405,7 +405,7 @@ header nav > a:hover {
 
 #servicos {
     background-color: #0E0D0C;
-    padding: 100px 70px;
+    padding: 100px 115px;
 }
 
 #servicos > div {
@@ -416,5 +416,19 @@ header nav > a:hover {
 
 #servicos > article {
     display: flex;
-    
+}
+
+#servicos > article {
+    border-collapse: collapse;
+}
+
+#servicos > article > div {
+    flex: 1;
+    margin-top: 100px;
+    border: 1px solid #2E2C29;
+    padding: 30px;
+}
+
+.number {
+    text-align: end;
 }
