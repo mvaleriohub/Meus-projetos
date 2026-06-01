@@ -414,6 +414,32 @@ header nav > a:hover {
     align-items: center;
 }
 
+#servicos .traco {
+    margin-top: 20px;
+    content: "";
+    display: block;
+    width: 25px;
+    height: 1px;
+    background-color: #C9A96E;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+#servicos > div > span {
+    color: #C9A96E;
+    font-family: var(--font-title);
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+#servicos > div > h2 {
+    margin-top: 20px;
+    font-size: 4em;
+    font-weight: lighter;
+    line-height: 1.2em;
+}
+
 #servicos > article {
     display: flex;
 }
@@ -423,12 +449,56 @@ header nav > a:hover {
 }
 
 #servicos > article > div {
+    position: relative;
     flex: 1;
     margin-top: 100px;
     border: 1px solid #2E2C29;
     padding: 30px;
 }
 
-.number {
-    text-align: end;
+#servicos > article > div:hover {
+    background-color: #1A1917;
+}
+
+#servicos > article > div:hover .number {
+    opacity: 0;
+}
+
+#servicos > article > div:hover .traco {
+    width: 50px;
+}
+
+#servicos > article > div:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+#servicos > article > div:first-child {
+    border-radius: 10px 0 0 10px;
+}
+
+#servicos .number {
+    font-family: var(--font-title);
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    font-size: 7rem;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0.07; 
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+#servicos > article > div > h3 {
+    font-size: 1.5em;
+    margin: 30px 0px;
+    font-weight: lighter;
+}
+
+#servicos > article > div > p {
+    color: #8A8680;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    line-height: 1.8em;
 }

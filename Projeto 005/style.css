@@ -1,72 +1,44 @@
 @charset "UTF-8";
 
-:root{
-
-    --cor-primaria-1: #7A223F;
-    --cor-primaria-2: #5B0E1D;
-
-    --cor-secundaria-1: #4A2D21;
-    --cor-secundaria-2: #2A1B15;
-
-    --cor-fundo-1: #16110F;
-    --cor-fundo-2: #241C18;
-
-    --cor-texto-1: #F5EBDD;
-    --cor-texto-2: #D6C7B5;
-    --cor-texto-3: #B9AA98;
-    --cor-texto-4: #6E625A;
-
-    --cor-borda-1: #3A302B;
-    --cor-borda-2: #2B2420;
-
-    --cor-sucesso: #4C7A5A;
-    --cor-aviso: #C6923D;
-    --cor-erro: #C14953;
-    --cor-info: #4A6FA5;
-}
-
-body {
-    color: var(--cor-texto-2);
-    background-color: var(--cor-fundo-1);
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
-h1, h2 {
-    color: var(--cor-texto-1);
+:root {
+  --bg-base: hsl(0, 30%, 4.5%);
+   --bg-surface: hsl(0, 28%, 8%);
+   --bg-card: hsl(0, 25%, 11%);
+
+   --color-text: hsl(0, 0%, 100%);
+   --color-primary: #261212;
 }
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-base);
+    color: var(--color-text);
+}
 
 header {
-    background-color: var(--cor-fundo-2);
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0px 70px;
-}
-
-header nav {
-    display: flex;
-    gap: clamp(10px, 2vh, 30px);
-}
-
-header nav > a {
-    color: var(--cor-texto-2);
-    text-decoration: none;
+    justify-content: space-between;
+    padding: 35px;
+    
 }
 
 #hero {
-    background-color: var(--cor-fundo-1);
+    postion: relative;
+    height: 100vh;
     background-image: url('imagens/hero-vinho.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    padding: 50vh 0;
 }
 
 #hero > article {
-    background-color: rgba(0, 0, 0, 0.603);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
