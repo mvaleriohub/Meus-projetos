@@ -15,7 +15,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: rgb(36, 36, 36);
+  background-color: #0E0D0C;
   color: #f0ece4;
   font-family: var(--font-text);
 }
@@ -412,6 +412,7 @@ header nav > a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 #servicos .traco {
@@ -423,6 +424,7 @@ header nav > a:hover {
     background-color: #C9A96E;
     flex-shrink: 0;
     margin-bottom: 20px;
+    transition: width 0.3s ease;
 }
 
 #servicos > div > span {
@@ -529,19 +531,19 @@ blockquote > footer {
     gap: 15px;
 }
 
-blockquote > footer > img {
+blockquote > footer#footer-depoimento > img {
     width: 50px;
     border-radius: 50%;
 }
 
-blockquote > footer > div {
+blockquote > footer#footer-depoimento > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #8A8680;
 }
 
-blockquote > footer > div > cite {
+blockquote > footer#footer-depoimento > div > cite {
     color: #C9A96E;
 }
 
@@ -675,4 +677,99 @@ blockquote > footer > div > cite {
 #cta > article > a:hover {
     background-color: #E8CFA0;
     transform: translateY(-3px);
+}
+
+/* Rodapé - Seção Footer Principal */
+
+aside, footer#footer-principal {
+    background-color: #0E0D0C;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+aside a {
+    transition-duration: 0.3s;
+}
+
+aside a:hover {
+    color: #C9A96E;
+}
+
+aside {
+    display: flex;
+    align-items: top;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+aside > div {
+    width: 300px;
+    padding-top: 50px;
+}
+
+aside > div span {
+    font-size: 1.5em;
+    font-family: var(--font-title);
+    padding-bottom: 30px;
+    display: block;
+}
+
+aside > div > h3 {
+    font-size: 1em;
+    color: #C9A96E;
+    font-weight: lighter;
+}
+
+aside > div p, aside > div a {
+    color: #8A8680;
+    font-size: .9em;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+aside > div > ul {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+aside li {
+    list-style: none;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contato a:first-of-type {
+    padding-top: 20px;
+    display: block;
+}
+
+/* Rodapé - Footer Principal do site */
+
+footer#footer-principal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 30px 20px;
+    color: #8A8680;
+    font-size: .9em;
+    border-top: 1px solid #2E2C29;
+}
+
+footer#footer-principal > nav {
+    display: flex;
+    gap: 20px;
+}
+
+footer#footer-principal > nav > a {
+    text-decoration: none;
+    color: #8A8680;
+    text-transform: uppercase;
+    font-size: .8em;
 }
